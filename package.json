@@ -1,0 +1,26 @@
+{
+  "name": "webview-post",
+  "version": "1.0.0",
+  "description": "Post messages to/from a web-view on iOS or Android using pubsub modal.",
+  "main": "index.js",
+  "bin": "index.js",
+  "files": ["*.*"],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uixpress/webview-post.git"
+  },
+  "keywords": [
+    "webview",
+    "pubsub",
+    "postMessage"
+  ],
+  "author": "Mike Amara",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/uixpress/webview-post/issues"
+  },
+  "homepage": "https://github.com/uixpress/webview-post#readme"
+}
