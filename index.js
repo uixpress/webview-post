@@ -1,3 +1,3 @@
-const wv = require("./webview");
+const wv = require("./src/webview");
 
 module.exports = wv;

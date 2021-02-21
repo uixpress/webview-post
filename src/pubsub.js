@@ -3,7 +3,7 @@ function pubsub() {
 };
 
 pubsub.prototype.subscribe = function(label, func){
-    if(label && this.funcs[label]){
+    if(label && !this.funcs[label]){
         this.funcs[label] = func;
     }
 }
