@@ -4,7 +4,7 @@
   "description": "Post messages to/from a web-view on iOS or Android using pubsub modal.",
   "main": "index.js",
   "bin": "index.js",
-  "files": ["*.*"],
+  "files": ["*.*", "./src/*.*"],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
