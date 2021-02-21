@@ -23,13 +23,13 @@ webview.prototype.config = function({appInstance = 'webviewPost'}){
 };
 
 webview.prototype.subscribe = function(type, func){
-    if(!this.appInstance) this.config();
+    if(!this.appInstance) this.config({});
     window[this.appInstance][type] = func;
     ps.subscribe(type, func);
 }
 
 webview.prototype.publish = function(type, payload){
-    if(!this.appInstance) this.config();
+    if(!this.appInstance) this.config({});
     postAppMessage({
         type,
         payload,

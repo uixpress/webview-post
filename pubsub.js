@@ -3,13 +3,13 @@ function pubsub() {
 };
 
 pubsub.prototype.subscribe = function(label, func){
-    if(label){
+    if(label && this.funcs[label]){
         this.funcs[label] = func;
     }
 }
 
-pubsub.prototype.publish = function(label, params){
-    if(label){
+pubsub.prototype.publish = function(label, params = {}){
+    if(label && this.funcs[label]){
         this.funcs[label](params);
     }
 }
